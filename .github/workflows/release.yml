@@ -11,13 +11,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build Alfred Workflow
-    	id: alfred_builder
       uses: mperezi/build-alfred-workflow@v1
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         tag_name: ${{ github.ref }}
         release_name: ${{ github.ref }}
@@ -26,7 +25,7 @@ jobs:
     - name: Upload Alfred Workflow
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ${{ steps.alfred_builder.outputs.workflow_file }}
