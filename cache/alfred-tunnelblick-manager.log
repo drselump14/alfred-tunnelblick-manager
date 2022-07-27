@@ -1,0 +1,72 @@
+08:26:02 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:26:02 Running update check in background...
+08:26:02 fork/exec ./bin/tunnelblickctl: no such file or directory
+08:26:02 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:26:02 Checking for updates...
+08:26:02 fetching https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases ...
+08:26:44 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:26:44 Running update check in background...
+08:26:44 fork/exec ./bin/tunnelblickctl: no such file or directory
+08:26:44 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:26:44 Checking for updates...
+08:26:44 fetching https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases ...
+08:27:02 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:27:02 Running update check in background...
+08:27:02 fork/exec ./bin/tunnelblickctl: no such file or directory
+08:27:02 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:27:02 Checking for updates...
+08:27:02 fetching https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases ...
+08:27:57 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:27:57 Running update check in background...
+08:27:57 fork/exec ./bin/tunnelblickctl: no such file or directory
+08:27:57 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:27:57 Checking for updates...
+08:27:57 fetching https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases ...
+08:28:33 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:28:33 Running update check in background...
+08:28:33 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:28:33 Checking for updates...
+08:28:33 fetching https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases ...
+08:28:33 Sent 2 result(s) to Alfred
+08:28:33 ------------------ 226.306919ms ------------------
+08:28:34 [200] https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases
+08:28:34 ------------------ 753.884861ms ------------------
+08:29:06 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:29:06 ------------------- 1.44283ms --------------------
+08:30:14 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:30:14 1m40.151764s since last check for update
+08:30:14 Sent 1 result(s) to Alfred
+08:30:14 Feedback already sent. Ignoring.
+08:30:14 ------------------- 1.626186ms -------------------
+08:31:08 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:31:08 Checking for updates...
+08:31:08 fetching https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases ...
+08:31:09 [200] https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases
+08:31:09 deleted contents of "cache/_aw/update"
+08:31:09 ------------------ 717.429094ms ------------------
+08:32:08 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:32:08 Checking for updates...
+08:32:08 fetching https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases ...
+08:32:09 [200] https://api.github.com/repos/drselump14/alfred-tunnelblick-manager/releases
+08:32:09 deleted contents of "cache/_aw/update"
+08:32:09 ------------------ 1.143121119s ------------------
+08:32:15 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+08:32:15 6.212564s since last check for update
+08:32:15 Sent 2 result(s) to Alfred
+08:32:15 ------------------ 310.391455ms ------------------
+17:49:20 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+17:49:20 9h17m11.305628s since last check for update
+17:49:20 Sent 1 result(s) to Alfred
+17:49:20 Feedback already sent. Ignoring.
+17:49:20 ------------------- 1.678638ms -------------------
+17:49:24 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+17:49:24 9h17m15.497126s since last check for update
+17:49:25 Sent 2 result(s) to Alfred
+17:49:25 ------------------ 268.275474ms ------------------
+17:50:04 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+17:50:04 ------------------- 802.043µs -------------------
+17:50:17 ------------- /v1.0.0 (AwGo/0.27.1) --------------
+17:50:17 9h18m7.882783s since last check for update
+17:50:17 latest version: 1.1.0
+17:50:17 Sent 5 result(s) to Alfred
+17:50:17 ------------------- 1.473234ms -------------------

@@ -21,6 +21,57 @@
 				<false/>
 			</dict>
 		</array>
+		<key>BD50F111-7255-4612-97E7-98B4608FF41E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E370B384-DAE3-4618-87FE-A6D852E27A8C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>067A15E0-1D2D-4EFB-B7B5-C94E8445C149</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8DEFEC2C-6F9B-4B46-8843-3D5F083C6BBE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>384208FC-C5AC-4C62-A2BC-7B7686645607</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9AD3B4EA-E10D-48E6-934E-F2E732C6580C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>16290B1C-E4DC-4AFE-88D3-35E79D69638C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C11132CE-0CE1-4936-AA4E-856121219028</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>538978E8-70A5-47A6-B52F-FA771058924D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CAD2B32D-FC16-4B77-B22C-7057285892CE</key>
 		<array/>
 		<key>DEF90991-BFC1-4745-BC5A-B336D15DA77C</key>
@@ -38,9 +89,22 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FD5EE9F1-FD03-4A79-8F1D-4B89FEBFA3A6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD50F111-7255-4612-97E7-98B4608FF41E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Slamet Kristanto</string>
+	<string>drselump14</string>
 	<key>description</key>
 	<string>Tunnelblick Manager</string>
 	<key>disabled</key>
@@ -137,6 +201,55 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
+				<string>tb</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./alfred-tunnelblick-manager</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>main menu</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FD5EE9F1-FD03-4A79-8F1D-4B89FEBFA3A6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
 				<string>tbdisconnect</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -196,6 +309,94 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>connect</string>
+						<key>outputlabel</key>
+						<string>tbconnect</string>
+						<key>uid</key>
+						<string>067A15E0-1D2D-4EFB-B7B5-C94E8445C149</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>disconnect</string>
+						<key>outputlabel</key>
+						<string>tbdisconnect</string>
+						<key>uid</key>
+						<string>384208FC-C5AC-4C62-A2BC-7B7686645607</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>disconnect-all</string>
+						<key>outputlabel</key>
+						<string>tballdisconnect</string>
+						<key>uid</key>
+						<string>16290B1C-E4DC-4AFE-88D3-35E79D69638C</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>update</string>
+						<key>outputlabel</key>
+						<string>tbupdate</string>
+						<key>uid</key>
+						<string>538978E8-70A5-47A6-B52F-FA771058924D</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>list</string>
+						<key>outputlabel</key>
+						<string>tblist</string>
+						<key>uid</key>
+						<string>9D972F0C-8A91-4135-A4A9-67B977482555</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>no query</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>BD50F111-7255-4612-97E7-98B4608FF41E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -242,51 +443,121 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tbupdate</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./alfred-tunnelblick-manager -check</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Check update</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C11132CE-0CE1-4936-AA4E-856121219028</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>Enable to list ubersicht widgets and refresh/enable/disabled it</string>
+	<string>Tunnelblick manager</string>
 	<key>uidata</key>
 	<dict>
 		<key>8DEFEC2C-6F9B-4B46-8843-3D5F083C6BBE</key>
 		<dict>
 			<key>xpos</key>
-			<real>110</real>
+			<real>410</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>320</real>
 		</dict>
 		<key>9AD3B4EA-E10D-48E6-934E-F2E732C6580C</key>
 		<dict>
 			<key>xpos</key>
-			<real>120</real>
+			<real>430</real>
 			<key>ypos</key>
-			<real>480</real>
+			<real>475</real>
+		</dict>
+		<key>BD50F111-7255-4612-97E7-98B4608FF41E</key>
+		<dict>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>435</real>
+		</dict>
+		<key>C11132CE-0CE1-4936-AA4E-856121219028</key>
+		<dict>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>630</real>
 		</dict>
 		<key>CAD2B32D-FC16-4B77-B22C-7057285892CE</key>
 		<dict>
 			<key>xpos</key>
-			<real>390</real>
+			<real>645</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>320</real>
 		</dict>
 		<key>DEF90991-BFC1-4745-BC5A-B336D15DA77C</key>
 		<dict>
 			<key>xpos</key>
-			<real>410</real>
+			<real>650</real>
 			<key>ypos</key>
-			<real>115</real>
+			<real>120</real>
 		</dict>
 		<key>E370B384-DAE3-4618-87FE-A6D852E27A8C</key>
 		<dict>
 			<key>xpos</key>
-			<real>120</real>
+			<real>415</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>125</real>
+		</dict>
+		<key>FD5EE9F1-FD03-4A79-8F1D-4B89FEBFA3A6</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>220</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
