@@ -130,7 +130,7 @@ func run() {
 			wf.NewItem("Update available!").
 				Subtitle("↩ to install").
 				Autocomplete("workflow:update").
-				Valid(true).
+				Valid(false).
 				Icon(iconAvailable)
 
 		}

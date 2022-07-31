@@ -90,7 +90,18 @@
 			</dict>
 		</array>
 		<key>FD5EE9F1-FD03-4A79-8F1D-4B89FEBFA3A6</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD50F111-7255-4612-97E7-98B4608FF41E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>drselump14</string>
