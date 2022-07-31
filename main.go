@@ -20,7 +20,7 @@ var (
 	repo          = "drselump14/alfred-tunnelblick-manager"
 	iconAvailable = &aw.Icon{Value: "update-available.png"}
 
-	availableCommands = []string{"connect", "disconnect", "disconnect-all", "update"}
+	availableCommands = []string{"connect", "disconnect", "disconnect-all", "check"}
 )
 
 const tunnelblickctlBin = "./bin/tunnelblickctl"

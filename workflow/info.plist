@@ -90,18 +90,7 @@
 			</dict>
 		</array>
 		<key>FD5EE9F1-FD03-4A79-8F1D-4B89FEBFA3A6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD50F111-7255-4612-97E7-98B4608FF41E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>drselump14</string>
@@ -383,7 +372,7 @@
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>no query</string>
+				<string>workflow:update</string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
@@ -459,7 +448,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>tbupdate</string>
+				<string>tbcheck</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
