@@ -71,6 +71,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A3C1FC08-9BAA-43E0-8639-01FD45EFB8E7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>CAD2B32D-FC16-4B77-B22C-7057285892CE</key>
 		<array/>
@@ -381,9 +391,23 @@
 						<key>uid</key>
 						<string>9D972F0C-8A91-4135-A4A9-67B977482555</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>workflow:update</string>
+						<key>outputlabel</key>
+						<string>workflow:update</string>
+						<key>uid</key>
+						<string>9F398A54-1BE4-42A8-B8CA-97268E0368C3</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>workflow:update</string>
+				<string>Unsupported query</string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
@@ -492,6 +516,55 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tbupdate</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Downloading...</string>
+				<key>script</key>
+				<string>./alfred-tunnelblick-manager workflow:update</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Update the workflow</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A3C1FC08-9BAA-43E0-8639-01FD45EFB8E7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Tunnelblick manager</string>
@@ -510,6 +583,13 @@
 			<real>430</real>
 			<key>ypos</key>
 			<real>475</real>
+		</dict>
+		<key>A3C1FC08-9BAA-43E0-8639-01FD45EFB8E7</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>780</real>
 		</dict>
 		<key>BD50F111-7255-4612-97E7-98B4608FF41E</key>
 		<dict>
