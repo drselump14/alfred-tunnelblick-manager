@@ -20,7 +20,7 @@ var (
 	repo          = "drselump14/alfred-tunnelblick-manager"
 	iconAvailable = &aw.Icon{Value: "update-available.png"}
 
-	availableCommands = []string{"connect", "disconnect", "disconnect-all", "check"}
+	availableCommands = []string{"connect", "disconnect", "alldisconnect"}
 )
 
 const tunnelblickctlBin = "./bin/tunnelblickctl"
@@ -42,7 +42,7 @@ func list() {
 	configs := strings.Split(listConfigs, "\n")
 
 	for _, config := range configs {
-		wf.NewItem(config).Valid(true).Arg(config)
+		wf.NewItem(config).Valid(true).Arg(config).Autocomplete(config)
 	}
 }
 
@@ -80,16 +80,6 @@ func disconnectAll() {
 	log.Println(successMessage)
 }
 
-func listAvailableCommands() {
-	for _, name := range availableCommands {
-		wf.NewItem(name).
-			Subtitle("Run " + name).
-			Autocomplete(name).
-			UID(name).
-			Valid(true)
-	}
-}
-
 func run() {
 	// parse args
 	args := wf.Args()
@@ -120,6 +110,8 @@ func run() {
 		}
 	}
 
+	log.Println("THE QUERY IS:", query)
+	log.Println(query)
 	// Only show update status if query is empty.
 	if query == "" {
 
@@ -144,7 +136,6 @@ func run() {
 				Icon(iconAvailable)
 
 		}
-		listAvailableCommands()
 	} else if query == "list" {
 		list()
 	} else if query == "connect" {
@@ -152,26 +143,20 @@ func run() {
 			log.Println(args)
 			config := args[1]
 			connect(config)
-		} else {
-			list()
+			// } else {
+			// 	list()
 		}
 	} else if query == "disconnect" {
 		if len(args) > 1 && args[1] != "" {
 			config := args[1]
 			disconnect(config)
-		} else {
-			list()
+			// } else {
+			// 	list()
 		}
 	} else if query == "disconnect-all" {
 		disconnectAll()
-	} else {
-		listAvailableCommands()
 	}
 
-	if query != "" {
-		wf.Filter(query)
-	}
-	// wf.WarnEmpty("No matching items", "Try a different query?")
 	wf.SendFeedback()
 }
 
