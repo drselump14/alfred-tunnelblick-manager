@@ -71,16 +71,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A3C1FC08-9BAA-43E0-8639-01FD45EFB8E7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>CAD2B32D-FC16-4B77-B22C-7057285892CE</key>
 		<array/>
@@ -100,18 +90,7 @@
 			</dict>
 		</array>
 		<key>FD5EE9F1-FD03-4A79-8F1D-4B89FEBFA3A6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD50F111-7255-4612-97E7-98B4608FF41E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>drselump14</string>
@@ -199,7 +178,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -223,7 +202,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./alfred-tunnelblick-manager</string>
+				<string>./alfred-tunnelblick-manager "$1" "$2"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>

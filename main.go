@@ -80,6 +80,16 @@ func disconnectAll() {
 	log.Println(successMessage)
 }
 
+func listAvailableCommands() {
+	for _, name := range availableCommands {
+		wf.NewItem(name).
+			Subtitle("Run " + name).
+			Autocomplete(name).
+			UID(name).
+			Valid(true)
+	}
+}
+
 func run() {
 	// parse args
 	args := wf.Args()
@@ -134,24 +144,34 @@ func run() {
 				Icon(iconAvailable)
 
 		}
-
-		for _, name := range availableCommands {
-			wf.NewItem(name).
-				Arg(name).
-				UID(name).
-				Valid(true)
-		}
+		listAvailableCommands()
 	} else if query == "list" {
 		list()
 	} else if query == "connect" {
-		connect(args[1])
+		if len(args) > 1 && args[1] != "" {
+			log.Println(args)
+			config := args[1]
+			connect(config)
+		} else {
+			list()
+		}
 	} else if query == "disconnect" {
-		disconnect(args[1])
+		if len(args) > 1 && args[1] != "" {
+			config := args[1]
+			disconnect(config)
+		} else {
+			list()
+		}
 	} else if query == "disconnect-all" {
 		disconnectAll()
+	} else {
+		listAvailableCommands()
 	}
 
-	wf.WarnEmpty("No matching items", "Try a different query?")
+	if query != "" {
+		wf.Filter(query)
+	}
+	// wf.WarnEmpty("No matching items", "Try a different query?")
 	wf.SendFeedback()
 }
 
